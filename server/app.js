@@ -11,9 +11,11 @@ const connection = mysql.createConnection({
 
 connection.connect( err => {
   if (err) {
-    console.log("error")
+    console.log("error");
     return err;
   } else {
-    console.log("database = Okay!")
+    console.log("database = Okay!");
   }
-} )
+});
+
+let query = "SELECT * FROM user"
