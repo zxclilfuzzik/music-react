@@ -1,0 +1,23 @@
+.header-wrapper {
+  background-color: 'black';
+  display: flex;
+}
+
+.header-list { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  color: black;
+}
+a {
+  margin-left: 55px;
+  margin-right: 55px;
+  justify-content: center;
+  text-align: center;
+}
+
