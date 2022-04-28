@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 45px;
+    margin-left: 15px;
+}
+
+h1 { 
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 25px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar {
+    background-color: black;
+    width: 25vh;
+    height: 100vh;
+}
