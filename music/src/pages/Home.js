@@ -1,10 +1,11 @@
-import React from "react";
-import Header from '../components/Header'
+import React, { Component } from "react";
+import Sidebar from '../components/Sidebar';
 
 
 const Home = () => {
+
     return (
-        <Header />
+        <Sidebar />
     );
 }
 

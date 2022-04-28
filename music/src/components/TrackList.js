@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import '../css/tracklist.css'
 
 const TrackList = () => {
+  
   return (
-    <div>
-      <p>fefrjperjgopj</p>
-    </div>
+    <div> TrackList </div>
   );
 }
 
