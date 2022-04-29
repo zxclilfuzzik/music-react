@@ -4,7 +4,16 @@ import '../css/tracklist.css'
 const TrackList = () => {
   
   return (
-    <div> TrackList </div>
+    <div className = "wrapper">
+      <div className = 'list'>
+
+        <div className = "track">
+          <img src="#" alt="img" className = "track-img"/>
+          <p> </p>
+        </div>
+
+      </div>
+    </div>
   );
 }
 

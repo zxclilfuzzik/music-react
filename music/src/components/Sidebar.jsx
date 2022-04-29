@@ -1,4 +1,5 @@
 import React from "react";
+
 import '../css/sidebar.css'
 
 
@@ -9,13 +10,12 @@ const Sidebar = () => {
 
             <h1>SOUNDCLOUD</h1>
 
-            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Library</a></li>
+                <li><a href="">fff</a></li>
                 <li><a href="">1 меню</a></li>
                 <li><a href="">1 меню</a></li>
-                <li><a href="">1 меню</a></li>
-                <li><a href="">1 меню</a></li>
-                <li><a href="">1 меню</a></li>
-            </ul>
+                
         </div>
     );
 }

@@ -24,5 +24,7 @@ a {
 .sidebar {
     background-color: black;
     width: 25vh;
+    max-width: 25vh;
+    min-width: 25vh;
     height: 100vh;
 }

@@ -1,10 +1,18 @@
 import React from 'react';
+import Header from '../components/Header';
 
 
 const Present = () => {
     
     return (
-        <div></div>
+        <>
+            <Header />
+            <div className='content'>
+                <div className='block-one'>
+                    <p>1</p>
+                </div>    
+            </div>
+        </>
     );
 }
 
