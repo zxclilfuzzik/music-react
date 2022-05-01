@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../css/sidebar.css'
 
@@ -6,17 +7,22 @@ import '../css/sidebar.css'
 const Sidebar = () => {
     
     return (
-        <div className="sidebar">
 
-            <h1 className = "logo-text">SOUNDCLOUD</h1>
+        <>
+                <div className = "sidebar">
 
-                <li><a href="">Home</a></li>
-                <li><a href="">Library</a></li>
-                <li><a href="">Search</a></li>
-                <li><a href="">Radio</a></li>
-                <li><a href="">1 меню</a></li>
-                
-        </div>
+                    <h1 className = "logo-text">SOUNDCLOUD</h1>
+                    <li><h2 className = "menu-text">Меню</h2></li> 
+                    <li><Link to="/">1212</Link></li>
+                    <li><Link to="/test">12123</Link></li>
+                    <li><Link to="/">1212</Link></li>
+                    <li><Link to="/test">12123</Link></li>
+                    <li><Link to="/test">12123</Link></li>
+            
+                </div>
+
+        </>
+       
     );
 }
 

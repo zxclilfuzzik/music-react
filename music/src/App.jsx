@@ -1,12 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Routes, Route, Link } from "react-router-dom";
+
 import Home from './pages/Home';
-import Library from './pages/Library';
+import Radio from './pages/Radio';
 import Present from './pages/Present';
 
 function App() {
   return (
-    <Home />
+    <>
+      <Routes>
+        <Route path="/" element = {<Home />} />
+        <Route path="test" element = {<Present />} />
+        <Route path="test" element = {<Present />} />
+        <Route path="test" element = {<Present />} />
+        <Route path="test" element = {<Present />} />
+        <Route path="test" element = {<Present />} />
+        <Route path="test" element = {<Present />} />
+        <Route path="test" element = {<Present />} />
+      </Routes>
+    </>
   );
 }
 
 export default App;
+
