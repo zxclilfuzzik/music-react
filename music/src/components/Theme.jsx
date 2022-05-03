@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/theme.css';
+import '../css/theme.modules.css';
 
 
 const Theme = () => {

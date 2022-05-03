@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/albumcover.css';
+import '../css/albumcover.modules.css';
 
 
 const AlbumCover = () => {

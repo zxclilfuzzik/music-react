@@ -1,10 +1,12 @@
-import { React, Button } from 'react';
+import { React } from 'react';
+import { Button } from '@mui/material';
 
-import '../../css/uibutton.css'
+import '../../css/uibutton.modules.css'
 const UIButton = (props) => {
 
     return (
-        <Button></Button>
+            <Button variant="contained">{props}</Button>
+
     );
 }
 

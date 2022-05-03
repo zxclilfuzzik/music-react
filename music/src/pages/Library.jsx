@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../css/library.css';
+import '../css/library.modules.css';
 
 const Library = () => {
     

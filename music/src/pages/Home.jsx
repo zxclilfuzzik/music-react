@@ -7,7 +7,7 @@ import Theme from '../components/Theme';
 import UITextField from "../components/ui/UITextField";
 import UIButton from "../components/ui/UIButton";
 
-import '../css/home.css'
+import '../css/home.modules.css'
 
 
 const Home = () => {
@@ -20,10 +20,14 @@ const Home = () => {
 
                 <div className = "content">
 
-                    <h1>Home</h1>
+                    <p className='label-text-one'>Home</p>
+
+                    <UITextField />
 
                     <div className = "state">
 
+                        <AlbumCover />
+                        <AlbumCover />
                         <AlbumCover />
                         <AlbumCover />
 

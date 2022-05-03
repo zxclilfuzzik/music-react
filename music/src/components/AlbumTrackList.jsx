@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/albumtracklist.css'
+import '../css/albumtracklist.modules.css'
 
 const AlbumTrackList = () => {
     

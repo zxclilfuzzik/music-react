@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../css/radio.css';
+import '../css/radio.modules.css';
 
 const Radio = () => {
 

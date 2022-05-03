@@ -1,10 +1,25 @@
 import React from 'react';
 
-import '../css/footer.css'
+import { BottomNavigation, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+import '../css/footer.modules.css'
 
 const Footer = () => {
     return (
-        <div></div>
+        <BottomNavigation sx = {{
+            backgroundColor: 'black',
+            height: 100,
+        }}>
+            <Link to = '/'>
+                <Typography align = 'center' sx = {{
+                    color: 'white',
+                    marginTop: 5
+                }}>
+                    MUSIC
+                </Typography>
+            </Link>
+        </BottomNavigation>
     ); 
 }
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../css/sidebar.css'
+import '../css/sidebar.modules.css'
 
 
 const Sidebar = () => {
     
     return (
-
+ 
         <>
                 <div className = "sidebar">
 
