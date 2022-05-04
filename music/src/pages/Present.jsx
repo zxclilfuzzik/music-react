@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer'
 
-import block from '../image/block.png'
-
 import '../css/present.modules.css';
 
 

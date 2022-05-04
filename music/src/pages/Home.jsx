@@ -1,11 +1,10 @@
 import React from 'react';
 
 import Sidebar from '../components/Sidebar';
+import TitleBar from '../components/TitleBar';
 import TrackList from '../components/TrackList'
 import AlbumCover from '../components/AlbumCover';
 import Theme from '../components/Theme';
-import UITextField from "../components/ui/UITextField";
-import UIButton from "../components/ui/UIButton";
 
 import '../css/home.modules.css'
 
@@ -19,17 +18,10 @@ const Home = () => {
                 <Sidebar />
 
                 <div className = "content">
-
-                    <p className='label-text-one'>Home</p>
-
-                    <UITextField />
+                    <TitleBar title = {"Home"} />
 
                     <div className = "state">
-
-                        <AlbumCover />
-                        <AlbumCover />
-                        <AlbumCover />
-                        <AlbumCover />
+                        <Theme />
 
                     </div>
 

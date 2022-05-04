@@ -1,13 +1,23 @@
 import React from 'react';
 
+import TitleBar from '../components/TitleBar';
+import Sidebar from '../components/Sidebar';
+
 import '../css/radio.modules.css';
 
 const Radio = () => {
 
     return (
-        <div className = "radio-wrapper">
-            <h1 className = "radio-bar">Radio</h1>
-        </div>
+        <>
+            <div className='container'>
+                <Sidebar />
+
+                <div className='wrapper'>
+                    <TitleBar title = {'Radio'} />
+
+                </div>
+            </div>
+        </>
     );
 }
 

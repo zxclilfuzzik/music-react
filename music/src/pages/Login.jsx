@@ -1,12 +1,33 @@
-import React from 'react';
-import { TextField, Button, Typography, Container, Box, Grid } from '@mui/material';
+import React, { useState } from 'react';
+
+import { TextField, Button, Typography, Container, Alert } from '@mui/material';
 
 import '../css/login.modules.css';
 
-const sumbitLogin = props => {  }
+
+const sumbitLogin = () => {  }
 
 
 const Login = () => {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [emailDirty, setEmailDirty] = useState(false);
+    const [passwordDirty, setPasswordDirty] = useState(false);
+    const [emailError, setEmailError] = useState('not email');
+    const [passwordError, setPasswordError] = useState('not password');
+
+    const BlurHandler = (e) => {
+        switch (e.target.name) {
+            case 'email':
+                setEmailDirty(true)
+                break
+            case 'password':
+                setPasswordDirty(true)
+                break
+
+        }
+    }
 
     return (
         <>
@@ -18,13 +39,14 @@ const Login = () => {
                         Вход
                     </Typography>
                         <form className='form-root'>
-                            <TextField id = "outline-basic" label = "Логин" variant= "outlined" sx={{
+                            {(emailDirty && emailError) && <Alert severity = "error">{emailError}</Alert>}
+                            <TextField value={email} name = 'login' id = "outline-basic" label = "Логин" variant= "outlined" sx={{
                                     marginTop: '7vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
-
-                            <TextField id = "outline-basic" label = "Пароль" variant= "outlined" sx={{
+                            {(passwordDirty && passwordError) && <Alert severity = "error">{passwordError}</Alert>}
+                            <TextField value = {password} name = 'password' id = "outline-basic" label = "Пароль" variant= "outlined" sx={{
                                     marginTop: '5vh',
                                     maxWidth: 700,
                                     minWidth: 500,
@@ -46,15 +68,3 @@ const Login = () => {
 }
 
 export default Login;
-
-//className = {classes.loginButton}
-//http://localhost:3000/login
-
-
-// const classes = useStyles();
-
-// const useStyles = makeStyles((theme) => ({
-//     loginButton: {
-//         marginTop: theme.spacing(1)
-//     }
-// }))
