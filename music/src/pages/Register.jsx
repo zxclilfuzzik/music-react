@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { Button, TextField, Container, Typography } from '@mui/material';
 
+import { Link } from 'react-router-dom';
 
 import '../css/register.modules.css';
 
@@ -17,39 +19,71 @@ const Register = () => {
                     }}>
                         Регистрация
                     </Typography>
-                        <form className='form-root'>
-                            <TextField id = "outline-basic" label = "E-mail" variant= "outlined" sx={{
+                        <form noValidate className='form-root'>
+                            <TextField id = "outline-basic"
+                                label = "E-mail"
+                                variant = "outlined"
+                                required
+                                sx={{
                                     marginTop: '7vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
 
-                            <TextField id = "outline-basic" label = "Имя" variant= "outlined" sx={{
+                            <TextField id = "outline-basic"
+                                label = "Имя"
+                                variant = "outlined"
+                                required
+                                sx={{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
 
-                            <TextField id = "outline-basic" label = "Имя пользователя" variant= "outlined" sx={{
+                            <TextField id = "outline-basic"
+                                label = "Имя пользователя"
+                                variant = "outlined"
+                                required
+                                sx={{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
 
-                            <TextField id = "outline-basic" label = "Пароль" variant= "outlined" sx={{
+                            <TextField id = "outline-basic"
+                                label = "Пароль"
+                                variant = "outlined"
+                                type="password"
+                                required
+                                sx={{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
 
-                            <TextField id = "outline-basic" label = "Повторите пароль" variant= "outlined" sx={{
+                            <TextField id = "outline-basic"
+                                label = "Повторите пароль"
+                                variant = "outlined"
+                                type="password"
+                                required
+                                sx={{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
 
-                            <Button onClick={ () => {alert('Click!')} } variant = "contained" size="large" sx={{
-                                    marginTop: '6vh',
+                            <Link to = '/login'>
+                                    <Typography sx={{
+                                            marginTop: '10px',
+                                            marginBottom: -4,
+                                            color: 'black'
+                                    }}>
+                                            Уже зарегистрированы?
+                                    </Typography>
+                            </Link>
+
+                            <Button variant = "contained" size="large" sx={{
+                                    marginTop: '5vh',
                                     maxWidth: 300,
                                     minWidth: 200,
                                     backgroundColor: 'black',
