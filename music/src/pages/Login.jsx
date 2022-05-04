@@ -28,7 +28,7 @@ const Login = () => {
                                 label = "Логин"
                                 variant = "outlined"
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '7vh',
                                     maxWidth: 700,
                                     minWidth: 500,

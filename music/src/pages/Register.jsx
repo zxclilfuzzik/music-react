@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Button, TextField, Container, Typography } from '@mui/material';
 
@@ -6,25 +6,47 @@ import { Link } from 'react-router-dom';
 
 import '../css/register.modules.css';
 
-const sumbitRegister = props => {  }
 
 const Register = () => {
+
+        const sumbitRegister = props => {  }
+
+        const [email, setEmail] = useState("");
+        const [name, setName] = useState("");
+        const [login, setLogin] = useState("");
+        const [password, setPassword] = useState("");
+        const [passwordConfirm, setPasswordConfirm] = useState("");
+
+        const handleSubmit = (e) => {
+                e.preventDefault()
+
+                if (email && name && login && password && passwordConfirm ) {
+                        if (password == passwordConfirm) {
+                                console.log(email);
+                                console.log(name);
+                                console.log(login);
+                                console.log(password);
+                                console.log(passwordConfirm);
+                        }
+                }
+        }
     
-    return(
+        return(
         <>
-             <Container fixed>
-                    <Typography align='center' variant='h2' color="textPrimary" sx={{
+                <Container fixed>
+                    <Typography align = "center" variant = "h2" color = "textPrimary" sx = {{
                         fontWeight: 700,
                         marginTop: '13vh',
                     }}>
                         Регистрация
                     </Typography>
-                        <form noValidate className='form-root'>
+                        <form noValidate autoComplete = "off" className = "form-root">
                             <TextField id = "outline-basic"
                                 label = "E-mail"
                                 variant = "outlined"
+                                onChange = {(e) => setEmail(e.target.value)}
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '7vh',
                                     maxWidth: 700,
                                     minWidth: 500,
@@ -33,8 +55,9 @@ const Register = () => {
                             <TextField id = "outline-basic"
                                 label = "Имя"
                                 variant = "outlined"
+                                onChange = {(e) => setName(e.target.value)}
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
@@ -43,8 +66,9 @@ const Register = () => {
                             <TextField id = "outline-basic"
                                 label = "Имя пользователя"
                                 variant = "outlined"
+                                onChange = {(e) => setLogin(e.target.value)}
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
@@ -54,8 +78,9 @@ const Register = () => {
                                 label = "Пароль"
                                 variant = "outlined"
                                 type="password"
+                                onChange = {(e) => setPassword(e.target.value)}
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
@@ -65,15 +90,16 @@ const Register = () => {
                                 label = "Повторите пароль"
                                 variant = "outlined"
                                 type="password"
+                                onChange = {(e) => setPasswordConfirm(e.target.value)}
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '3vh',
                                     maxWidth: 700,
                                     minWidth: 500,
                             }}/>
 
                             <Link to = '/login'>
-                                    <Typography sx={{
+                                    <Typography sx = {{
                                             marginTop: '10px',
                                             marginBottom: -4,
                                             color: 'black'
@@ -82,7 +108,7 @@ const Register = () => {
                                     </Typography>
                             </Link>
 
-                            <Button variant = "contained" size="large" sx={{
+                            <Button onClick = {handleSubmit} variant = "contained" size = "large" sx = {{
                                     marginTop: '5vh',
                                     maxWidth: 300,
                                     minWidth: 200,
