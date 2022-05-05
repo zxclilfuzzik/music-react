@@ -1,44 +1,42 @@
 import React from 'react';
 
-import { Box ,Typography, Container, Paper, Grid } from '@mui/material';
+import { Box ,Typography, Paper, Grid } from '@mui/material';
 
 import '../css/theme.modules.css';
 
 
 const Theme = (props) => {
     return (
-        <Box sx={{
-            
-        }}>
-            <Paper style = {{backgroundImage: `url(https://blog.soundcloud.com/wp-content/uploads/2018/11/cropped-SCBlog_Header_06.21-Search-1.jpg)`}} 
+            <Paper style = {{backgroundImage: props.image}} 
                 sx = {{
-                    height: 480,
+                    height: 170,
+                    width: 300,
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    position: 'relative',
                     color: 'white',
-                    marginBottom: 4,
-                    marginTop: 8
+                    marginLeft: '35px',
+                    borderRadius: '15px',
+                    backgroundColor: 'black'
                 }}>
-                    <Container fixed>
                         <Grid container>
                             <Grid item md = {6}>
                                 <Box sx = {{
                                     position: 'relative',
-                                    marginTop: 20,
-                                    backgroundRepeat: 'no-repeat',
                                 }}>
-                                    <Typography component = 'h1' color = 'inherit' gutterBottom = 'true' sx = {{
+                                    <Typography component = 'h5' color = 'inherit' gutterBottom = 'true' sx = {{
                                         color: 'white',
+                                        paddingTop: '80px',
+                                        paddingLeft: '20px',
+                                        fontSize: '25px',
+                                        fontWeight: 'bold',
+                                        margin: 0
                                     }}>
                                         {props.title}
                                     </Typography>
                                 </Box>
                             </Grid>
                         </Grid>
-                    </Container>
                 </Paper>
-        </Box>
     );
 }
 

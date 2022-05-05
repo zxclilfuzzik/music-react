@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { TextField, Button, Typography, Container, Alert } from '@mui/material';
+import { TextField, Button, Typography, Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import '../css/login.modules.css';
@@ -11,10 +11,23 @@ const sumbitLogin = () => {  }
 
 const Login = () => {
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        if (email && password) {
+            console.log(email);
+            console.log(password);
+        }
+    }
+
     return (
+
         <>
             <Container fixed>
-                    <Typography align='center' variant='h2' color="textPrimary" sx={{
+                    <Typography align = "center" variant = "h2" color = "textPrimary" sx = {{
                         fontWeight: 700,
                         marginTop: '20vh',
                     }}>
@@ -22,11 +35,10 @@ const Login = () => {
                     </Typography>
                         <form noValidate className='form-root'>
 
-                            {/* {(emailDirty && emailError) && <Alert severity = "error">{emailError}</Alert>} */}
-
                             <TextField id = "outline-basic"
                                 label = "Логин"
                                 variant = "outlined"
+                                onChange = {(e) => setEmail(e.target.value)}
                                 required
                                 sx = {{
                                     marginTop: '7vh',
@@ -34,11 +46,10 @@ const Login = () => {
                                     minWidth: 500,
                             }}/>
 
-                            {/* {(passwordDirty && passwordError) && <Alert severity = "error">{passwordError}</Alert>} */}
-
                             <TextField id = "outline-basic"
                                 label = "Пароль"
                                 variant = "outlined"
+                                onChange = {(e) => setPassword(e.target.value)}
                                 type="password"
                                 required
                                 sx={{
@@ -57,7 +68,7 @@ const Login = () => {
                                     </Typography>
                             </Link>
 
-                            <Button variant = "contained" size="large" sx={{
+                            <Button onClick = {handleSubmit} variant = "contained" size="large" sx={{
                                     marginTop: '6vh',
                                     maxWidth: 300,
                                     minWidth: 200,

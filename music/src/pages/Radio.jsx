@@ -14,7 +14,6 @@ const Radio = () => {
 
                 <div className='wrapper'>
                     <TitleBar title = {'Radio'} />
-
                 </div>
             </div>
         </>

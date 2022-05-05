@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import { Button, TextField, Container, Typography } from '@mui/material';
-
 import { Link } from 'react-router-dom';
 
 import '../css/register.modules.css';

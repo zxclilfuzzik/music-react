@@ -1,8 +1,9 @@
 import React from 'react';
 
+import { Box } from '@mui/system';
+
 import Sidebar from '../components/Sidebar';
 import TitleBar from '../components/TitleBar';
-import TrackList from '../components/TrackList'
 import AlbumCover from '../components/AlbumCover';
 import Theme from '../components/Theme';
 
@@ -13,21 +14,44 @@ const Home = () => {
 
     return (
         <>
-            <div className="container">
+            <div className = "container">
 
                 <Sidebar />
 
                 <div className = "content">
-                    <TitleBar title = {"Home"} />
+                    <TitleBar title = {'Home'} />
 
                     <div className = "state">
-                        <Theme />
+                        <Theme title = 'Артисты недели' />
+                        <Theme title = 'Проверка недели' />
+                        <Theme title = 'Проверка недели' />
+                        <Theme title = 'Проверка недели' />
 
                     </div>
 
-                    <div className = "playlists">
-                      <TrackList />
-                    </div>
+                    <Box className = "playlists" sx = {{
+                        display: 'flex',
+                        paddingTop: '90px'
+                    }}>
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                    </Box>
+
+                    <Box className = "playlists" sx = {{
+                        display: 'flex',
+                        paddingTop: '50px',
+                    }}>
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                        <AlbumCover />
+                    </Box>
 
                 </div>
 
