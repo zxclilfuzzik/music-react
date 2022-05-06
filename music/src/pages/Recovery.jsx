@@ -6,20 +6,19 @@ import { Link } from 'react-router-dom';
 import '../css/login.modules.css';
 
 
-const sumbitLogin = () => {  }
 
 
-const Login = () => {
+const Recovery = () => {
 
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [login, setLogin] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (email && password) {
+        if (email && login) {
             console.log(email);
-            console.log(password);
+            console.log(login);
         }
     }
 
@@ -31,12 +30,12 @@ const Login = () => {
                         fontWeight: 700,
                         marginTop: '20vh',
                     }}>
-                        Вход
+                        Восстановление аккаунта
                     </Typography>
                         <form noValidate className='form-root'>
 
                             <TextField id = "outline-basic"
-                                label = "Логин"
+                                label = "Почта"
                                 variant = "outlined"
                                 onChange = {(e) => setEmail(e.target.value)}
                                 required
@@ -47,10 +46,9 @@ const Login = () => {
                             }}/>
 
                             <TextField id = "outline-basic"
-                                label = "Пароль"
+                                label = "Логин"
                                 variant = "outlined"
-                                onChange = {(e) => setPassword(e.target.value)}
-                                type="password"
+                                onChange = {(e) => setLogin(e.target.value)}
                                 required
                                 sx={{
                                     marginTop: '5vh',
@@ -69,13 +67,13 @@ const Login = () => {
                                         </Typography>
                                 </Link>
 
-                                <Link to = '/recovery'>
+                                <Link to = '/login'>
                                         <Typography sx={{
                                                 marginTop: '10px',
                                                 marginBottom: -4,
                                                 color: 'black'
                                         }}>
-                                                Восстановить аккаунт
+                                                Уже зарегистрированы?
                                         </Typography>
                                 </Link>
                             </Box>
@@ -86,7 +84,7 @@ const Login = () => {
                                     minWidth: 200,
                                     backgroundColor: 'black',
                             }}>
-                                    Войти
+                                    Восстановить
                             </Button>
                         </form>
             </Container>
@@ -94,4 +92,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default Recovery;

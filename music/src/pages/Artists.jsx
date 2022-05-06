@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Typography, Box, Paper } from '@mui/material';
 import Sidebar from '../components/Sidebar';
+import ArtistTrack from '../components/ArtistTrack'
+import { Title } from '@mui/icons-material';
 
 const Artists = (props) => {
 
@@ -17,8 +19,17 @@ const Artists = (props) => {
                     borderRadius: 0,
                 }}>
                     <ArtistName name = 'zxcursed' />
-                    
                 </Paper>
+
+                <Box sx={{
+
+                }}>
+                    <ArtistTrack title = 'ekgkoegjelknglken' image = '../image/block.png'/>
+                    <ArtistTrack title = 'ekgkoegjelknglken' image = '../image/block.png'/>
+                    <ArtistTrack title = 'ekgkoegjelknglken' image = '../image/block.png'/>
+                    <ArtistTrack title = 'ekgkoegjelknglken' image = '../image/block.png'/>
+                    <ArtistTrack title = 'ekgkoegjelknglken' image = '../image/block.png'/>
+                </Box>
             </div>
         </div>
     );

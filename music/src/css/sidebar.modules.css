@@ -38,7 +38,7 @@ a {
     width: 25vh;
     max-width: 25vh;
     min-width: 25vh;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .logo-text {

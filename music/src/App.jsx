@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import SearchPage from './pages/SearchPage';
 import Artists from './pages/Artists';
+import Recovery from './pages/Recovery';
 
 function App(props) {
 
@@ -27,6 +28,7 @@ function App(props) {
         <Route path = '*' element = {<NotFound />} />
         <Route path = 'search' element = {<SearchPage />} />
         <Route path = 'artist' element = {<Artists />} />
+        <Route path = 'recovery' element = {<Recovery />} />
       </Routes>
     </>
   );
