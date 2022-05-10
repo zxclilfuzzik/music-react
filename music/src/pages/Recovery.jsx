@@ -16,7 +16,7 @@ const Recovery = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (email && login) {
+        if (email && login  ) {
             console.log(email);
             console.log(login);
         }

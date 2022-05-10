@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-import { Button, TextField, Container, Typography } from '@mui/material';
+import { Button, TextField, Container, Typography, Alert } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import '../css/register.modules.css';
 
 
 const Register = () => {
+
+
+const registration = async (Email, Password, Login, Name) => {
+                try {
+                    const response = await axios.post('http://localhost:8803', {Email, Password, Login, Name})
+                    alert('Done!')
+                } catch(e) {
+                    alert('Press F to pay respects...');
+                }
+            }
 
         const sumbitRegister = props => {  }
 
@@ -19,13 +30,9 @@ const Register = () => {
         const handleSubmit = (e) => {
                 e.preventDefault()
 
-                if (email && name && login && password && passwordConfirm ) {
+                if (email && name && login && password && passwordConfirm) {
                         if (password == passwordConfirm) {
-                                console.log(email);
-                                console.log(name);
-                                console.log(login);
-                                console.log(password);
-                                console.log(passwordConfirm);
+                                registration(email, password, login, name);
                         }
                 }
         }

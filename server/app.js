@@ -1,21 +1,19 @@
-const mysql = require('mysql');
+const express = require('express');
+const app = express();
+const cors = require('cors');
+const port = process.env.PORT || 8803
+const bodyParser = require('body-parser')
 
-// конфигурация пакета
+app.use(bodyParser.urlencoded({extended: true})); 
+app.use(bodyParser.json());
 
-const connection = mysql.createConnection({
-  host: "",
-  user: "",
-  database: "",
-  password: ""
+const routes = require('./settings/routes')
+routes(app)
+
+app.use(cors())
+
+app.listen(port, () => {
+  console.log('Слушаю ${port}');
 });
 
-connection.connect( err => {
-  if (err) {
-    console.log("error");
-    return err;
-  } else {
-    console.log("database = Okay!");
-  }
-});
 
-let query = "SELECT * FROM user"
