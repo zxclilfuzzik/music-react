@@ -6,7 +6,14 @@ import '../css/theme.modules.css';
 
 
 const Theme = (props) => {
+
     return (
+
+        <Box sx={{
+            height: '170px',
+            width: '300px',
+            padding: '2vw'
+        }}>
             <Paper style = {{backgroundImage: props.image}} 
                 sx = {{
                     height: 170,
@@ -14,7 +21,6 @@ const Theme = (props) => {
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                     color: 'white',
-                    marginLeft: '35px',
                     borderRadius: '15px',
                     backgroundColor: 'black'
                 }}>
@@ -37,6 +43,7 @@ const Theme = (props) => {
                             </Grid>
                         </Grid>
                 </Paper>
+             </Box>
     );
 }
 

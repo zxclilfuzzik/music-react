@@ -17,12 +17,12 @@ const Header = () => {
                 <Toolbar>
                     <Link to = '/'>
                         <Typography variant = 'h5'>
-                            Music
+                            Blueberry
                         </Typography>
                     </Link>
                     <Box mr = {30}>
                         <div className = 'li-header'>
-                            <Link to = '#'><Typography variant='h7'>Music</Typography></Link>
+                            <Link to = '/help'><Typography variant='h7'>Помощь</Typography></Link>
                             <Link to = '#'><Typography variant='h7'>Music</Typography></Link>
                             <Link to = '#'><Typography variant='h7'>Music</Typography></Link>
                         </div>

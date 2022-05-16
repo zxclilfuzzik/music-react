@@ -12,7 +12,7 @@ const Register = () => {
 
 const registration = async (Email, Password, Login, Name) => {
                 try {
-                    const response = await axios.post('http://localhost:8803', {Email, Password, Login, Name})
+                    const response = await axios.post('http://localhost:8889', {Email, Password, Login, Name})
                     alert('Done!')
                 } catch(e) {
                     alert('Press F to pay respects...');

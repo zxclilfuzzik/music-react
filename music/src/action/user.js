@@ -2,9 +2,9 @@ import axios from 'axios';
 
 export const registration = async (Email, Password, Login, Name) => {
     try {
-        const response = await axios.post('http://localhost:8803', {Email, Password, Login, Name})
+        const responseReg = await axios.post('http://localhost:8803', {Email, Password, Login, Name})
     } catch(e) {
-        alert('Press F to pay respects');
+        alert(e);
     }
 }
 

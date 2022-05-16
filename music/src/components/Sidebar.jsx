@@ -17,7 +17,6 @@ const Sidebar = () => {
                     <li><Link to="/radio">Radio</Link></li>
                     <li><Link to="/library">Library</Link></li>
                     <li><Link to="/search">Search</Link></li>
-                    <li><Link to="/3u4y32i4ij23bfkjb2k3jbfjo2bfjo">404</Link></li>
             
                 </div>
 

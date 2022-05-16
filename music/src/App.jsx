@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 import SearchPage from './pages/SearchPage';
 import Artists from './pages/Artists';
 import Recovery from './pages/Recovery';
+import HelpPage from './pages/HelpPage';
 
 function App(props) {
 
@@ -29,6 +30,7 @@ function App(props) {
         <Route path = 'search' element = {<SearchPage />} />
         <Route path = 'artist' element = {<Artists />} />
         <Route path = 'recovery' element = {<Recovery />} />
+        <Route path = 'help' element = {<HelpPage />} />
       </Routes>
     </>
   );
