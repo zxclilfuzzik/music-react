@@ -24,7 +24,11 @@ const Sidebar = (props) => {
                     </div>
 
                     <div className = 'sidebar-other'>
-                        <Divider />
+                        <Divider sx = {{
+                            backgroundColor: 'white',
+                            width: '11vw',
+                            marginLeft: '1.5vw'
+                        }} />
                         <h2>Other</h2>
 
                         <li><Link to = '/profile'>Profile</Link></li>
