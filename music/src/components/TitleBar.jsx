@@ -9,7 +9,8 @@ const TitleBar = (props) => {
                 fontSize: 55,
                 fontWeight: 'bold',
                 paddingLeft: '35px',
-                paddingTop: '40px'
+                paddingTop: '40px',
+                color: props.colorTitle || 'black'
             }}>
                 {props.title}
             </Typography>

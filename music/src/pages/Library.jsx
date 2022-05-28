@@ -1,18 +1,35 @@
 import React from 'react';
 
+import { Box, Typography } from '@mui/system';
+
 import TitleBar from '../components/TitleBar';
 import Sidebar from '../components/Sidebar';
+import LibraryList from '../components/LibraryList';
 
 import '../css/library.modules.css';
 
 const Library = () => {
     
     return (
-        <div className='container'>
+        <div className = 'container'>
             <Sidebar />
-            <div className='wrapper'>
+
+            <Box sx = {{
+                display: 'flex',
+                flexDirection: 'column'
+            }}>
                 <TitleBar title = 'Library' />
-            </div>
+
+                <Box sx = {{
+                    marginTop: '40px',
+                }}>
+                    <LibraryList title = 'fffff' />
+                    <LibraryList title = 'fffff' />
+                    <LibraryList title = 'fffff' />
+                    <LibraryList title = 'fffff' />
+                    <LibraryList title = 'fffff' />
+                </Box>
+            </Box>
         </div>
     );
 }

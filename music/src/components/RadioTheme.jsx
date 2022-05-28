@@ -7,12 +7,12 @@ const RadioTheme = (props) => {
 
     return(
         <Box sx={{
-            width: '150px',
-            height: '150px',
+            width: '246px',
+            height: '185px',
             backgroundColor: props.color,
-            borderRadius: '15px',
+            borderRadius: '20px',
             marginLeft: props.leftMagrin || '16px',
-            marginRight: '16.5px'
+            marginRight: '35px'
         }}>
             <Typography sx = {{
                 fontSize: '20px',

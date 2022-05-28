@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { TextField, Box, Typography } from '@mui/material';
 
@@ -7,21 +7,33 @@ import TitleBar from '../components/TitleBar';
 
 import '../css/radio.modules.css'
 
-const SearchPage = () => {
+const SearchPage = (props) => {
 
     return (
         <>
-            <div className='container'>
+            <div className = 'container'>
                 <Sidebar />
 
-                <div className='wrapper'>
+                <div className = 'wrapper'>
                     <Box>
                         <TitleBar title = 'Search'/>
-                        <TextField id = "filled-basic" label = "Outlined" variant = "filled" fullWidth/>
-                        <Typography>fff</Typography>
+
+                        <Box sx = {{
+                            marginLeft: '40px',
+                            marginTop: '23px'
+                        }}>
+                            <TextField id = 'filled-basic' label = 'Поиск' variant = 'filled' sx = {{
+                                width: '81vw'
+                            }} />
+                        </Box>
+
+                        <Box sx = {{
+                            marginTop: '40px'
+                        }}>
+                            {/* Тут результаты поиска */}
+                        </Box>
                     </Box>
                 </div>
-
             </div>
         </>
     );
