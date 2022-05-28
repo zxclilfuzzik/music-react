@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom';
 import '../css/login.modules.css';
 
 
-const sumbitLogin = () => {  }
-
-
 const Login = () => {
 
     const [email, setEmail] = useState("");

@@ -1,9 +1,15 @@
 import React from 'react';
 
-const ProfileComponent = () => {
+import { Box } from '@mui/system';
+
+const ProfileComponent = (props) => {
 
     return (
-        <div></div>
+        <>
+            <Box>
+                
+            </Box>
+        </>
     );
 }
 

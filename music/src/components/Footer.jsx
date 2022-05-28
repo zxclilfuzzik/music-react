@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 
 import '../css/footer.modules.css'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <BottomNavigation sx = {{
-            backgroundColor: 'black',
+            backgroundColor: props.colorFooter || 'black',
             height: 100,
         }}>
             <Link to = '/'>
                 <Typography align = 'center' sx = {{
-                    color: 'white',
+                    color: props.colorText || 'white',
                     marginTop: 5
                 }}>
                     MUSIC

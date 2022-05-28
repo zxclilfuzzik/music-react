@@ -10,11 +10,11 @@ import Theme from '../components/Theme';
 import '../css/home.modules.css'
 
 
-const Home = () => {
+const Home = (props) => {
 
     return (
         <>
-            <Box sx={{
+            <Box sx = {{
                 display: 'flex',
                 flexDirection: 'row',
                 height: '100vh'

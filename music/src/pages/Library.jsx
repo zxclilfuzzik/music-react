@@ -23,11 +23,11 @@ const Library = () => {
                 <Box sx = {{
                     marginTop: '40px',
                 }}>
-                    <LibraryList title = 'fffff' />
-                    <LibraryList title = 'fffff' />
-                    <LibraryList title = 'fffff' />
-                    <LibraryList title = 'fffff' />
-                    <LibraryList title = 'fffff' />
+                    <LibraryList textName = 'fffff' />
+                    <LibraryList textName = 'fffff' />
+                    <LibraryList textName = 'fffff' />
+                    <LibraryList textName = 'fffff' />
+                    <LibraryList textName = 'fffff' />
                 </Box>
             </Box>
         </div>

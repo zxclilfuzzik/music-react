@@ -8,8 +8,8 @@ const TrackList = () => {
       <div className = 'list'>
 
         <div className = "track">
-          <img src="#" alt="img" className = "track-img"/>
-          <p> </p>
+          <img src = "#" alt = "img" className = "track-img"/>
+          <p></p>
         </div>
 
       </div>

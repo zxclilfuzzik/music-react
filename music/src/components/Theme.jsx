@@ -9,7 +9,7 @@ const Theme = (props) => {
 
     return (
 
-        <Box sx={{
+        <Box sx = {{
             height: '170px',
             width: '300px',
             padding: '2vw'

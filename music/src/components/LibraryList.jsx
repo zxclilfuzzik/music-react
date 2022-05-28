@@ -34,7 +34,17 @@ const LibraryList = (props) => {
                         marginLeft: '3vw',
                         marginTop: '20px'
                     }}>
-                        {props.title}
+                        {props.textName}
+                    </Typography>
+
+                    <Typography sx = {{
+                        color: 'black',
+                        fontSize: '30px',
+                        fontWeight: 'bold',
+                        marginLeft: '3vw',
+                        marginTop: '20px'
+                    }}>
+                        {props.textArtist}
                     </Typography>
                 </Box>
                 <Divider sx = {{

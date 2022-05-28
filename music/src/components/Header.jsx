@@ -4,14 +4,13 @@ import { AppBar, Button, Container, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { Link } from 'react-router-dom';
 
-
 import '../css/header.modules.css';
 
-const Header = () => {
+const Header = (props) => {
     
     return (
         <AppBar position = 'fixed' sx = {{
-            backgroundColor: 'black',
+            backgroundColor: props.colorHeader || 'black',
         }}>
             <Container fixed>
                 <Toolbar>

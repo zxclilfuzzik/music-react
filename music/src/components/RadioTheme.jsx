@@ -6,10 +6,10 @@ import { Typography } from '@mui/material';
 const RadioTheme = (props) => {
 
     return(
-        <Box sx={{
+        <Box sx = {{
             width: '246px',
             height: '185px',
-            backgroundColor: props.color,
+            backgroundColor: props.color || 'black',
             borderRadius: '20px',
             marginLeft: props.leftMagrin || '16px',
             marginRight: '35px'
