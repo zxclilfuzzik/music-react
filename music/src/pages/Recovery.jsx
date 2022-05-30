@@ -8,7 +8,7 @@ import '../css/login.modules.css';
 
 
 
-const Recovery = () => {
+const Recovery = (props) => {
 
     const [email, setEmail] = useState("");
     const [login, setLogin] = useState("");
@@ -93,3 +93,5 @@ const Recovery = () => {
 }
 
 export default Recovery;
+
+

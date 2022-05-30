@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+
 // import '../css/albumtracklist.modules.css'
 
-const AlbumTrackList = () => {
+const AlbumTrackList = (props) => {
     
     return (
       <div className = "">

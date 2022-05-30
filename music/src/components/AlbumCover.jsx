@@ -9,15 +9,19 @@ const AlbumCover = (props) => {
 
     return (
         <Box sx = {{
-            width: '190px',
-            height: '190px',
-            backgroundColor: 'red',
+            width: '180px',
+            height: '180px',
+            backgroundColor: props.colorBg || 'black',
+            backgroundRepeat: 'no-repeat',
             borderRadius: '15px',
-            marginLeft: '35px'
+            backgroundImage: `url(${props.image})`,
+            marginLeft: props.margin || '2vw'
         }}>
-            <img src = "" alt = "картинка" className = 'img-albumcover' />
         </Box>
     );
 }
 
 export default AlbumCover;
+
+
+

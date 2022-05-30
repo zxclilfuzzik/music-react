@@ -13,9 +13,10 @@ const RadioThemeTwo = (props) => {
                 width: '150px',
                 height: '150px',
                 backgroundColor: props.color || 'black',
-                marginLeft: props.marginLeft || '0px',
+                marginLeft: props.marginLeft || '3vw',
                 backgroundImage: `url(${props.imageLink})`,
-                borderRadius: '15px'
+                borderRadius: '15px',
+                marginRight: '2vh'
             }}>
                 <Typography sx = {{
                     color: props.colorText || 'white',
@@ -28,3 +29,4 @@ const RadioThemeTwo = (props) => {
 }
 
 export default RadioThemeTwo;
+

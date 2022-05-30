@@ -8,16 +8,14 @@ import Footer from '../components/Footer';
 
 import '../css/present.modules.css';
 
-
-
-const Present = () => {
+const Present = (props) => {
 
     
     return (
         <>
            <Header />
             <main>
-                <Paper style = {{backgroundImage: `url(https://blog.soundcloud.com/wp-content/uploads/2018/11/cropped-SCBlog_Header_06.21-Search-1.jpg)`}} 
+                <Paper style = {{backgroundImage: `url(https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/12/e5/b0/12e5b00f-45a5-3ed3-4748-68ba15169333/source/1060x608sr.webp)`}} 
                 sx = {{
                     height: 480,
                     backgroundPosition: 'center',
@@ -109,7 +107,7 @@ const Present = () => {
                                             <Link to = '/'>
                                                 <Card>
                                                     <CardMedia 
-                                                        image = 'https://blog.soundcloud.com/wp-content/uploads/2021/02/SCPlayerOne_Partner_BlogPost.jpg'
+                                                        image = 'https://cdn.dribbble.com/users/130631/screenshots/18075389/media/69c97e334299fbf4c44f85312f97494e.png?compress=1&resize=1200x900&vertical=top'
                                                         title = 'image title'
                                                         sx = {{
                                                             width: 250,
@@ -120,11 +118,11 @@ const Present = () => {
 
                                                     <CardContent>
                                                         <Typography variant = 'h5' gutterBottom>
-                                                            Blog post
+                                                            Музыка помогает?
                                                         </Typography>
 
                                                         <Typography>
-                                                            Info post
+                                                            Научное исследование
                                                         </Typography>
                                                     </CardContent>
                                                 </Card>
@@ -135,7 +133,7 @@ const Present = () => {
                                             <Link to = '/'>
                                                 <Card>
                                                     <CardMedia 
-                                                        image = 'https://blog.soundcloud.com/wp-content/uploads/2021/02/SCPlayerOne_Partner_BlogPost.jpg'
+                                                        image = 'https://cdn.dribbble.com/users/130631/screenshots/15908017/media/8d560faf96b70a2486fca1f0f786da5e.png?compress=1&resize=1200x900&vertical=top'
                                                         title = 'image title'
                                                         sx = {{
                                                             width: 250,
@@ -146,11 +144,11 @@ const Present = () => {
 
                                                     <CardContent>
                                                         <Typography variant = 'h5' gutterBottom>
-                                                            Blog post
+                                                            Для авторов
                                                         </Typography>
 
                                                         <Typography>
-                                                            Info post
+                                                            Авторское пособие
                                                         </Typography>
                                                     </CardContent>
                                                 </Card>
@@ -161,7 +159,7 @@ const Present = () => {
                                         <Link to = '/'>
                                             <Card>
                                                 <CardMedia 
-                                                    image = 'https://blog.soundcloud.com/wp-content/uploads/2021/02/SCPlayerOne_Partner_BlogPost.jpg'
+                                                    image = 'https://cdn.dribbble.com/users/372/screenshots/15518063/media/2a94790f4d1213b8e044b0fe061c7d34.jpg?compress=1&resize=1200x900&vertical=top'
                                                     title = 'image title'
                                                     sx = {{
                                                         width: 250,
@@ -172,11 +170,11 @@ const Present = () => {
 
                                                 <CardContent>
                                                     <Typography variant = 'h5' gutterBottom>
-                                                        Blog post
+                                                        Для слушателей
                                                     </Typography>
 
                                                     <Typography>
-                                                        Info post
+                                                        Как начать?
                                                     </Typography>
                                                 </CardContent>
                                             </Card>
@@ -196,5 +194,4 @@ const Present = () => {
 }
 
 export default Present;
-
 

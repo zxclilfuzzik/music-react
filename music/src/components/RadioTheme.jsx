@@ -11,12 +11,16 @@ const RadioTheme = (props) => {
             height: '185px',
             backgroundColor: props.color || 'black',
             borderRadius: '20px',
-            marginLeft: props.leftMagrin || '16px',
-            marginRight: '35px'
+            marginLeft: props.leftMagrin || '3wv',
+            marginRight: '10vh',
+            backgroundImage: `url(${props.image})`
         }}>
             <Typography sx = {{
                 fontSize: '20px',
-                color: props.textColor
+                color: props.textColor || 'white',
+                fontWeight: 'bold',
+                marginLeft: '30px',
+                marginTop: '130px'
             }}>
                 {props.title}
             </Typography>
@@ -25,3 +29,5 @@ const RadioTheme = (props) => {
 }
 
 export default RadioTheme;
+
+

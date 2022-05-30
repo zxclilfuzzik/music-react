@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Typography, Box } from '@mui/material';
 
 const TitleBar = (props) => {
@@ -6,9 +7,9 @@ const TitleBar = (props) => {
     return (
         <Box>
             <Typography sx = {{
-                fontSize: 55,
-                fontWeight: 'bold',
-                paddingLeft: '35px',
+                fontSize: 55 || props.size,
+                fontWeight: props.weight || 'bold',
+                paddingLeft: props.paddingLeft || '3vw',
                 paddingTop: '40px',
                 color: props.colorTitle || 'black'
             }}>
@@ -19,3 +20,5 @@ const TitleBar = (props) => {
 }
 
 export default TitleBar;
+
+

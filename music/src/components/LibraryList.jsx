@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Divider, Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const LibraryList = (props) => {
 
@@ -22,20 +23,22 @@ const LibraryList = (props) => {
                         height: '90px',
                         backgroundImage: `url(${props.imageLink})`,
                         borderRadius: '10px',
-                        backgroundColor: props.colorBG || 'black'
+                        backgroundColor: props.colorBg || 'black'
                     }}>
 
                     </Box>
 
-                    <Typography sx = {{
+                   <Box sx = {{width: '50vw'}}>
+                        <Typography sx = {{
                         color: 'black',
                         fontSize: '30px',
                         fontWeight: 'bold',
                         marginLeft: '3vw',
-                        marginTop: '20px'
+                        marginTop: '20px',
                     }}>
                         {props.textName}
                     </Typography>
+                   </Box>
 
                     <Typography sx = {{
                         color: 'black',
@@ -44,7 +47,7 @@ const LibraryList = (props) => {
                         marginLeft: '3vw',
                         marginTop: '20px'
                     }}>
-                        {props.textArtist}
+                        {props.textArtistName}
                     </Typography>
                 </Box>
                 <Divider sx = {{
@@ -57,3 +60,5 @@ const LibraryList = (props) => {
 }
 
 export default LibraryList;
+
+

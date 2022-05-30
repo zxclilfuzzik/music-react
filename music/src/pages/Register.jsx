@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import '../css/register.modules.css';
 
 
-const Register = () => {
+const Register = (props) => {
 
 
 const registration = async (Email, Password, Login, Name) => {
@@ -122,7 +122,6 @@ const registration = async (Email, Password, Login, Name) => {
                             }}>
                                     Зарегистрироваться
                             </Button>
-
                         </form>
             </Container>
         </>
@@ -130,3 +129,5 @@ const registration = async (Email, Password, Login, Name) => {
 }
 
 export default Register;
+
+

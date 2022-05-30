@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import '../css/login.modules.css';
 
 
-const Login = () => {
+const Login = (props) => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -30,7 +30,7 @@ const Login = () => {
                     }}>
                         Вход
                     </Typography>
-                        <form noValidate className='form-root'>
+                        <form noValidate className = 'form-root'>
 
                             <TextField id = "outline-basic"
                                 label = "Логин"
@@ -47,9 +47,9 @@ const Login = () => {
                                 label = "Пароль"
                                 variant = "outlined"
                                 onChange = {(e) => setPassword(e.target.value)}
-                                type="password"
+                                type = "password"
                                 required
-                                sx={{
+                                sx = {{
                                     marginTop: '5vh',
                                     maxWidth: 700,
                                     minWidth: 500,
@@ -67,7 +67,7 @@ const Login = () => {
                                 </Link>
 
                                 <Link to = '/recovery'>
-                                        <Typography sx={{
+                                        <Typography sx = {{
                                                 marginTop: '10px',
                                                 marginBottom: -4,
                                                 color: 'black'
@@ -77,7 +77,7 @@ const Login = () => {
                                 </Link>
                             </Box>
 
-                            <Button onClick = {handleSubmit} variant = "contained" size="large" sx={{
+                            <Button onClick = {handleSubmit} variant = "contained" size = "large" sx = {{
                                     marginTop: '6vh',
                                     maxWidth: 300,
                                     minWidth: 200,
@@ -92,3 +92,4 @@ const Login = () => {
 }
 
 export default Login;
+

@@ -12,17 +12,19 @@ const Theme = (props) => {
         <Box sx = {{
             height: '170px',
             width: '300px',
-            padding: '2vw'
+            paddingLeft: '2vw',
+            paddingBottom: '2vw',
+            paddingTop: '2vw'
         }}>
-            <Paper style = {{backgroundImage: props.image}} 
+            <Paper style = {{backgroundImage: `url(${props.image})`}} 
                 sx = {{
                     height: 170,
                     width: 300,
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    color: 'white',
+                    color: props.colorText || 'white',
                     borderRadius: '15px',
-                    backgroundColor: 'black'
+                    backgroundColor: props.colorBg || 'black'
                 }}>
                         <Grid container>
                             <Grid item md = {6}>
@@ -48,3 +50,5 @@ const Theme = (props) => {
 }
 
 export default Theme;
+
+

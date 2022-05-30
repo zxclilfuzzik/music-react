@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Divider } from '@mui/material';
+import { Divider, Typography, Box } from '@mui/material';
 
 import '../css/sidebar.modules.css'
 
@@ -11,33 +11,97 @@ const Sidebar = (props) => {
     return (
  
         <>
-                <div className = 'sidebar'>
-                    <div>
-                        <h1 className = 'logo-text'>SOUNDCLOUD</h1>
+            <Box sx = {{
+                backgroundColor: 'black',
+                width: '25vh',
+                minWidth: '25vh',
+                minHeight: '100vh', 
+            }}>
+                <Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '700',
+                    textAlign: 'center',
+                    marginTop: '60px',
+                }}>
+                    Blueberry
+                </Typography>
 
-                        <li><h2 className = 'menu-text'>Меню</h2></li> 
+                <Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '300',
+                    marginTop: '40px',
+                    textAlign: 'center'
+                }}>
+                    Меню
+                </Typography>
+                <Link to = '/home'><Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '700',
+                    ":hover": {
+                        color: 'violet'
+                    }
+                }}>
+                    Home
+                </Typography></Link>
 
-                        <li><Link to = '/home'>Home</Link></li>
-                        <li><Link to = '/radio'>Radio</Link></li>
-                        <li><Link to = '/library'>Library</Link></li>
-                        <li><Link to = '/search'>Search</Link></li>
-                    </div>
+                <Link to = '/radio'><Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '700',
+                    ":hover": {
+                        color: 'violet'
+                    }
+                }}>
+                    Радио
+                </Typography></Link>
 
-                    <div className = 'sidebar-other'>
-                        <Divider sx = {{
+                <Link to = '/library'><Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '700',
+                    ":hover": {
+                        color: 'violet'
+                    }
+                }}>
+                    Библиотека
+                </Typography></Link>
+
+                <Link to = '/search'><Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '700',
+                    ":hover": {
+                        color: 'violet'
+                    }
+                }}>
+                    Поиск
+                </Typography></Link>
+
+                <Divider sx = {{
                             backgroundColor: 'white',
                             width: '11vw',
-                            marginLeft: '1.5vw'
+                            marginLeft: '1.5vw',
+                            marginBottom: '25px'
                         }} />
-                        <h2>Other</h2>
 
-                        <li><Link to = '/profile'>Profile</Link></li>
-                    </div>
-                </div>
-
+                <Link to = '/profile'><Typography sx = {{
+                    color: 'white',
+                    fontSize: '25px',
+                    fontWeight: '700',
+                    ":hover": {
+                        color: 'violet'
+                    }
+                }}>
+                    Профиль
+                </Typography></Link>
+            </Box>
         </>
        
     );
 }
 
 export default Sidebar;
+

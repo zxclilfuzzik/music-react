@@ -6,8 +6,17 @@ const ProfileComponent = (props) => {
 
     return (
         <>
-            <Box>
-                
+            <Box sx = {{
+                width: '50px',
+                height: '50px',
+                borderRadius: '50px'
+              }}>
+              <Box sx = {{
+                  backgroundImage: `url(${props.imageURL})` || `url()`,
+                  backgroundColor: 'black',
+                }}>
+
+              </Box>
             </Box>
         </>
     );

@@ -2,6 +2,11 @@ import React from 'react';
 
 import { Box, Typography } from '@mui/system';
 
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+import SkipNextIcon from '@mui/icons-material/SkipNext';
+import PauseIcon from '@mui/icons-material/Pause';
+
 const Player = (props) => {
 
     return (
@@ -11,7 +16,9 @@ const Player = (props) => {
                 height: '60px',
                 backgroundColor: 'black'
             }}>
-                <Box>
+                <Box sx = {{
+                    
+                }}>
 
                 </Box>
             </Box>

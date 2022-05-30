@@ -1,46 +1,45 @@
-
 li {
-    list-style: none;
-    margin-bottom: 45px;
-    margin-left: 15px;
-    font-size: 20px;
-    font-weight: 700;
+  list-style: none;
+  margin-bottom: 45px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 a:hover {
-    color: blueviolet;
+  color: blueviolet;
 }
 
-h1 { 
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    font-size: 25px;
-    text-align: center;
+h1 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .menu-text {
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    text-align: center;
-    font-size: 25px;
-    margin-right: 50px;
-    font-weight: 100;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 25px;
+  margin-right: 50px;
+  font-weight: 100;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .sidebar {
-    background-color: black;
-    width: 25vh;
-    max-width: 25vh;
-    min-width: 25vh;
-    min-height: 100vh;
+  background-color: black;
+  width: 25vh;
+  max-width: 25vh;
+  min-width: 25vh;
+  min-height: 100vh;
 }
 
 .logo-text {
-    padding-top: 50px;
+  padding-top: 50px;
 }

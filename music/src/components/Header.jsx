@@ -22,8 +22,8 @@ const Header = (props) => {
                     <Box mr = {30}>
                         <div className = 'li-header'>
                             <Link to = '/help'><Typography variant='h7'>Помощь</Typography></Link>
-                            <Link to = '#'><Typography variant='h7'>Music</Typography></Link>
-                            <Link to = '#'><Typography variant='h7'>Music</Typography></Link>
+                            <Link to = '#'><Typography variant='h7'>Информация</Typography></Link>
+                            <Link to = '#'><Typography variant='h7'>Поддержка</Typography></Link>
                         </div>
                     </Box>
                     <Box mr = {-10}>
@@ -48,3 +48,6 @@ const Header = (props) => {
 }
 
 export default Header;
+
+
+

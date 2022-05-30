@@ -6,7 +6,7 @@ import TitleBar from '../components/TitleBar';
 
 import '../css/profile.modules.css';
 
-const Profile = () => {
+const Profile = (props) => {
     
     return (
         <div className='container'>
